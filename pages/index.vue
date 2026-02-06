@@ -10,12 +10,16 @@ import { ref, onMounted, nextTick } from 'vue';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+// 引入圖片以獲取正確的打包路徑
+import bannerImage from '~/assets/images/banner_m.webp'
+
 useHead({
     title: "HAN作品集 | HAN’s Portfolio | HANの作品集 | HAN의 작품집",
     meta: [
         // SEO
+        { name: 'robots', content: 'index, follow' },
         { name: 'description', content: 'HAN 的個人作品集，涵蓋網頁設計、前端開發、互動特效與系統平台建置。專精 Vue.js 與創意網頁開發，展現設計與程式的結合。' },
-        { name: 'keywords', content: 'HAN, 作品集, Portfolio, 前端工程師, Vue.js, 網頁設計, 網頁開發, Web Developer, 網站特效, UI/UX' },
+        { name: 'keywords', content: 'HAN, 作品集, Portfolio, 前端工程師, Vue.js, Nuxt.js, TypeScript, 網頁設計, 網頁開發, Web Developer, 網站特效, UI/UX' },
         { name: 'author', content: 'HAN' },
 
         // Open Graph
@@ -23,17 +27,20 @@ useHead({
         { property: 'og:title', content: 'HAN作品集 | 前端工程師 Portfolio' },
         { property: 'og:description', content: '探索 HAN 的網頁設計與前端開發作品，專注 Vue.js、互動特效與系統平台建置。' },
         { property: 'og:url', content: 'https://han45678.github.io/HanWorks/' },
-        { property: 'og:image', content: 'https://han45678.github.io/HanWorks/og-image.jpg' },
+        { property: 'og:site_name', content: 'HAN Works' },
+        // 使用 import 的變數，並加上網域 (origin)
+        { property: 'og:image', content: `https://han45678.github.io${bannerImage}` },
         { property: 'og:locale', content: 'zh_TW' },
 
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'HAN作品集 | 前端工程師 Portfolio' },
+        { name: 'twitter:title', content: 'HAN作品集 | 前端工程師作品集 | Front-End Engineer Portfolio' },
         { name: 'twitter:description', content: '探索 HAN 的網頁設計與前端開發作品，專注 Vue.js、互動特效與系統平台建置。' },
-        { name: 'twitter:image', content: 'https://han45678.github.io/HanWorks/icon.ico' }
+        { name: 'twitter:image', content: `https://han45678.github.io${bannerImage}` }
     ],
     link: [
-        { rel: 'icon', type: 'image/svg+xml', href: 'https://han45678.github.io/HanWorks/icon.ico' }
+        { rel: 'icon', type: 'image/svg+xml', href: 'https://han45678.github.io/HanWorks/icon.ico' },
+        { rel: 'canonical', href: 'https://han45678.github.io/HanWorks/' }
     ],
     script: [
         {
@@ -52,7 +59,8 @@ useHead({
             "worksFor": {
                 "@type": "Organization",
                 "name": "Freelance"
-            }
+            },
+            "knowsAbout": ["Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "SCSS", "Web Design", "UI/UX"]
             })
         } as any
     ]
