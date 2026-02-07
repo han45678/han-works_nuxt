@@ -14,29 +14,32 @@ import 'aos/dist/aos.css'
 import bannerImage from '~/assets/images/banner_m.webp'
 
 useHead({
-    title: "HAN作品集 | HAN’s Portfolio | HANの作品集 | HAN의 작품집",
+    title: "HAN作品集 | 前端工程師 & 網頁設計 | HAN’s Portfolio",
     meta: [
         // SEO
         { name: 'robots', content: 'index, follow' },
-        { name: 'description', content: 'HAN 的個人作品集，涵蓋網頁設計、前端開發、互動特效與系統平台建置。專精 Vue.js 與創意網頁開發，展現設計與程式的結合。' },
-        { name: 'keywords', content: 'HAN, 作品集, Portfolio, 前端工程師, Vue.js, Nuxt.js, TypeScript, 網頁設計, 網頁開發, Web Developer, 網站特效, UI/UX' },
+        { name: 'description', content: 'HAN 的個人作品集，專注於網頁設計、前端開發(Vue.js/Nuxt.js)、互動特效與系統平台建置。具備 RWD 響應式設計與 UI/UX 思維，致力於打造高品質的數位體驗。' },
+        { name: 'keywords', content: 'HAN, 作品集, Portfolio, 前端工程師, Frontend Engineer, Vue.js, Nuxt.js, TypeScript, 網頁設計, Web Design, RWD, 響應式網頁, 網站特效, UI/UX' },
         { name: 'author', content: 'HAN' },
 
         // Open Graph
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'HAN作品集 | 前端工程師 Portfolio' },
+        { property: 'og:title', content: 'HAN作品集 | 前端工程師 & 網頁設計 Portfolio' },
         { property: 'og:description', content: '探索 HAN 的網頁設計與前端開發作品，專注 Vue.js、互動特效與系統平台建置。' },
         { property: 'og:url', content: 'https://han45678.github.io/HanWorks/' },
         { property: 'og:site_name', content: 'HAN Works' },
         // 使用 import 的變數，並加上網域 (origin)
         { property: 'og:image', content: `https://han45678.github.io${bannerImage}` },
+        { property: 'og:image:alt', content: 'HAN Works Portfolio Banner' },
+        { property: 'og:image:type', content: 'image/webp' },
         { property: 'og:locale', content: 'zh_TW' },
 
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'HAN作品集 | 前端工程師作品集 | Front-End Engineer Portfolio' },
+        { name: 'twitter:title', content: 'HAN作品集 | 前端工程師 & 網頁設計 Portfolio' },
         { name: 'twitter:description', content: '探索 HAN 的網頁設計與前端開發作品，專注 Vue.js、互動特效與系統平台建置。' },
-        { name: 'twitter:image', content: `https://han45678.github.io${bannerImage}` }
+        { name: 'twitter:image', content: `https://han45678.github.io${bannerImage}` },
+        { name: 'twitter:image:alt', content: 'HAN Works Portfolio Banner' }
     ],
     link: [
         { rel: 'icon', type: 'image/svg+xml', href: 'https://han45678.github.io/HanWorks/icon.ico' },
@@ -60,7 +63,7 @@ useHead({
                 "@type": "Organization",
                 "name": "Freelance"
             },
-            "knowsAbout": ["Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "SCSS", "Web Design", "UI/UX"]
+            "knowsAbout": ["Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "SCSS", "Web Design", "UI/UX", "RWD", "Frontend Development"]
             })
         } as any
     ]
