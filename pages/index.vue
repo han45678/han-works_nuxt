@@ -26,7 +26,7 @@ useHead({
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'HAN作品集 | 前端工程師 & 網頁設計 Portfolio' },
         { property: 'og:description', content: '探索 HAN 的網頁設計與前端開發作品，專注 Vue.js、互動特效與系統平台建置。' },
-        { property: 'og:url', content: 'https://han45678.github.io/HanWorks/' },
+        { property: 'og:url', content: 'https://han45678.github.io/' },
         { property: 'og:site_name', content: 'HAN Works' },
         // 使用 import 的變數，並加上網域 (origin)
         { property: 'og:image', content: `https://han45678.github.io${bannerImage}` },
@@ -42,8 +42,8 @@ useHead({
         { name: 'twitter:image:alt', content: 'HAN Works Portfolio Banner' }
     ],
     link: [
-        { rel: 'icon', type: 'image/svg+xml', href: 'https://han45678.github.io/HanWorks/icon.ico' },
-        { rel: 'canonical', href: 'https://han45678.github.io/HanWorks/' }
+        { rel: 'icon', type: 'image/svg+xml', href: 'https://han45678.github.io/icon.ico' },
+        { rel: 'canonical', href: 'https://han45678.github.io/' }
     ],
     script: [
         {
@@ -52,8 +52,8 @@ useHead({
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "HAN",
-            "url": "https://han45678.github.io/HanWorks/",
-            "image": "https://han45678.github.io/HanWorks/icon.ico",
+            "url": "https://han45678.github.io/",
+            "image": "https://han45678.github.io/icon.ico",
             "sameAs": [
                 "https://github.com/han45678",
                 "https://www.linkedin.com/in/han0717"

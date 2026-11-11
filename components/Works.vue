@@ -62,28 +62,28 @@ const info = ref<WorkItem[]>([
         id: 6,
         title: '昀集富昱',
         text: '與立炘數位合作完成的建案網站',
-        link: 'https://han45678.github.io/HanWorks/cpm/yunjee_fuyu/',
+        link: 'https://han45678.github.io/cpm/yunjee_fuyu/',
         detail: false
     },
     {
         id: 7,
         title: '統元極美',
         text: '與立炘數位合作完成的建案網站',
-        link: 'https://han45678.github.io/HanWorks/cpm/tongyuan/',
+        link: 'https://han45678.github.io/cpm/tongyuan/',
         detail: false
     },
     {
         id: 8,
         title: '麗晶ONE',
         text: '與立炘數位合作完成的建案網站',
-        link: 'https://han45678.github.io/HanWorks/cpm/lijing_group/',
+        link: 'https://han45678.github.io/cpm/lijing_group/',
         detail: false
     },
     {
         id: 9,
         title: '白隅',
         text: '與立炘數位合作完成的建案網站',
-        link: 'https://han45678.github.io/HanWorks/cpm/baiyu/',
+        link: 'https://han45678.github.io/cpm/baiyu/',
         detail: false
     },
     {
